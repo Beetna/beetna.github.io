@@ -41,12 +41,30 @@ var x = setInterval(function() {
   
  <div><center>"COUNTDOWN TO ELECTION DAY AND SITE OPENING"</center></div>
   
- <div><center>
-    <label for="pass">Enter Password:</label>
-    <input type="password" id="pass" name="password"
-           minlength="8" required>
-   </center></div>
 
+</head>
+<body>
+<form>
+    <label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+  <center><input type="button" value="Submit" onclick="checkPswd();" /></center>
+</form>
+
+  <script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "benjamin";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="kawsproject1.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+</body>
+</html>
+   
   
  
   
