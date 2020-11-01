@@ -60,6 +60,18 @@ var x = setInterval(function() {
         }
         else{
             alert("Passwords do not match.");
+<form>
+    <center><label for="pswd">Journal Password: </label>
+      <input type="password" id="pswd"></center>
+  <center><input type="button" value="Submit" onclick="checkPswd();" /></center>
+</form>
+    
+           <script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "cs1ben";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="journal.html";
           
        
         } 
