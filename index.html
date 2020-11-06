@@ -1,78 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-p {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 0px;
-  url('https://fonts.googleapis.com/css?family=VT323');
-}
-</style>
-</head>
-<body>
-
-<p id="electionday"></p>
-
-<script>
-var countDownDate = new Date("November 3, 2020 18:00:00").getTime();
-
-var x = setInterval(function() {
-
-  var now = new Date().getTime();
-    
-  var distance = countDownDate - now;
-    
+  <!DOCTYPE>
+  <html>
   
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  document.getElementById("electionday").innerHTML = days + " days " + hours + " hours "
-  + minutes + " minutes " + seconds + " seconds ";
-    
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("electionday").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+  <font size="+8"><center>Welcome to the Terminal</center></font>
+	<center><a href="journal.html"> Journal</a</center>
+	<center><a href="projects.html"> Projects</a</center>
+	<center><a href="graphics.html"> Curated Graphics </a</center>
   
- <div><center>"Countdown to the First Polls Closing"</center></div>
-     <div><font size="+4"><center>"Have You Voted?"</center></font></div>
-
-</head>
-<body>
-<form>
-    <center><label for="pswd">Enter your password: </label>
-      <input type="password" id="pswd"></center>
-  <center><input type="button" value="Submit" onclick="checkPswd();" /></center>
-</form>
- 
-  <script type="text/javascript">
-    function checkPswd() {
-        var confirmPassword = "ben";
-        var password = document.getElementById("pswd").value;
-        if (password == confirmPassword) {
-             window.location="kawsproject1.html";
-        }
-        else{
-            alert("Passwords do not match.");
-
-         
-
-       
-        } 
-    }
-</script>
   
-<body>
-<html>
+  Site in Progress
   
- 
-  
-    
-
-  
+  </html>
