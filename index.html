@@ -1,79 +1,108 @@
 <!DOCTYPE html>
-<html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0/favicon-16x16.png">
+	<link rel="manifest" href="favicon_package_v0/site.webmanifest">
+	<link rel="mask-icon" href="favicon_package_v0/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	
 <style>
-p {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 0px;
-  url('https://fonts.googleapis.com/css?family=VT323');
+		
+	body{
+		background-image:url("hula2400.jpg");
+		background-repeat:no-repeat;
+		background-image:contain;
+		background-size:cover;
+	}
+	</style> 
+			
+<style>
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none; 
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black; 
+  padding: 12px 16px;
+  text-decoration: none; 
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: lightblue}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: salmon;
 }
 </style>
 </head>
 <body>
 
-<p id="electionday"></p>
 
-<script>
-var countDownDate = new Date("November 3, 2020 12:00:00").getTime();
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+  <a href="journal.html">Journal</a>
+  <a href="projects.html">Projects</a>
+  <a href="index.html">Home</a>
+  </div>
+</div>
 
-var x = setInterval(function() {
 
-  var now = new Date().getTime();
-    
-  var distance = countDownDate - now;
-    
-  
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  document.getElementById("electionday").innerHTML = days + " days " + hours + " hours "
-  + minutes + " minutes " + seconds + " seconds ";
-    
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("electionday").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-  
- <div><center>"COUNTDOWN TO ELECTION DAY AND SITE OPENING"</center></div>
-     <div><font size="+4"><center>"Have You Voted?"</center></font></div>
+<html>
 
-</head>
 <body>
-<form>
-    <center><label for="pswd">Enter your password: </label>
-      <input type="password" id="pswd"></center>
-  <center><input type="button" value="Submit" onclick="checkPswd();" /></center>
-</form>
+<style>
+table, th, td {
+  border: 1px solid chocolate;
+  font-size: 50px;
+  table-layout: fixed; 
+  width: 100%; 
+  background-color: teal;
+	
+	
+}
+	
+	</style>
+<table>
+  <tr>
+    <td><center><a href="journal.html">Journalกʕ•͡ᴥ•ʔก</center></td>
+    <td><center><a href="projects.html">Projects</center></td>
+	
 
-  <script type="text/javascript">
-    function checkPswd() {
-        var confirmPassword = "bennybear";
-        var password = document.getElementById("pswd").value;
-        if (password == confirmPassword) {
-             window.location="kawsproject1.html";
-        }
-        else{
-            alert("Passwords do not match.");
-          
-       
-        } 
-    }
-</script>
+  <a>
   
-<center><a href="journal.html"> Journal</a</center>
-
-</body>
-</html>
-  
-  
- 
-  
-
-</body> 
-</html>
+<div>
+		
+		
+	  
+	  </div>
+	  </body> 
+	</head>
+  </html>   
