@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+
+<style>
+		
+	body{
+		background-image:url("5288d3f.jpg");
+		background-attachment: fixed ;
+  	  	background-repeat: no-repeat;
+    	background-size: 100% 100%;
+    	background-position: center;
+    	
+
+</style>	
+		
+	
+</style> 
+
+  <style>
+    #figure {
+    width: 75px;
+    height: 45px;
+    position: absolute;
+    content: url(https://i.pinimg.com/originals/a5/c4/5a/a5c45aef1130cebecb2647bd4768876e.png);
+    right: 675px;
+
+   	
+     
+    }
+
+  </style>
+
+  <body>
+    <div id="figure">
+      <script>
+        document.addEventListener("mousemove",
+          function(event){
+            figure.style.right = event.x - 23 + 'px';
+            figure.style.bottom = event.y - 10 + 'px';
+          });
+
+      </script>
+
+</html>
